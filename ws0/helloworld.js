@@ -20,7 +20,7 @@ http.createServer(function (request, response) {
         "<tr><td>Maija Virtanen</td><td>Asematie 12</td><td>Kiljava</td></tr></table>")
 
     // Send the reponse body as "Hello World"
-    response.end('Hello world\n');
+    response.end('Hello world, hello world indeed!\n');
 }).listen(8081);
 
 // Console will print the message
