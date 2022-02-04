@@ -26,13 +26,12 @@ let iWroteStart = "I wrote this!\r\n";
 
 // Write
 fs.writeFile(newFile, iWroteStart, err => {
-    if (err) console.error(err);
+    if (err) return console.error(err);
 });
 
 // Append
 fs.appendFile(newFile, allData, (err) => {
-    if (err)
-        console.error(err);
+    if (err) return console.error(err);
 });
 
 // We want to append this string to the file.
@@ -40,6 +39,6 @@ let iWroteEnd = "\r\nI wrote this!";
 
 // Append to the end of file
 fs.appendFile(newFile, iWroteEnd, err => {
-    if (err) console.error(err);
+    if (err) return console.error(err);
     console.log("The desired data was appended to end");
 });

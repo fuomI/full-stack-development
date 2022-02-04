@@ -1,4 +1,4 @@
-let fs = require("fs");
+const fs = require("fs");
 
 console.log("Program started");
 let data = fs.readFileSync('example.txt');
