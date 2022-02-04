@@ -15,7 +15,7 @@ function results(err, data) {
     console.log("");
 }
 
-let newFile = 'combiningfiles.js';
+let newFile = __dirname + '/newdata/combiningfiles.js';
 
 let data = fs.readFileSync(fileOne).toString();
 let dataTwo = fs.readFileSync(fileTwo).toString();
