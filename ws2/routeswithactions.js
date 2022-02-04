@@ -3,7 +3,7 @@ const fs = require('fs');
 
 let frontpage = fs.readFileSync('example.txt');
 
-http.createServer(async function (request,response) {
+http.createServer(function (request,response) {
 
     if (request.url === '/') {
         response.writeHead(200, {'Content-Type': 'Text/plain'});
