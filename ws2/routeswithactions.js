@@ -1,7 +1,10 @@
 const http = require('http');
 const fs = require('fs');
 
-let frontpage = fs.readFileSync('example.txt');
+let frontpage = fs.readFileSync('frontpage.txt').toString();
+let contact = fs.readFileSync('contact.txt').toString();
+let example = fs.readFileSync('example.txt').toString();
+let jsonSample = fs.readFileSync('sampledata.json').toString();
 
 http.createServer(function (request,response) {
 
@@ -10,9 +13,24 @@ http.createServer(function (request,response) {
         response.write('Nothing to see here');
     }
 
-    if (request.url === '/frontpage') {
+    else if (request.url === '/frontpage') {
         response.writeHead(200, {'Content-Type': 'Text/html'});
         response.write(frontpage);
+    }
+
+    else if (request.url === '/contact') {
+        response.writeHead(200, {'Content-Type': 'Text/html'});
+        response.write(contact);
+    }
+
+    else if (request.url === '/plaintext') {
+        response.writeHead(200, {'Content-Type': 'Text/plain'});
+        response.write(example);
+    }
+
+    else if (request.url === '/json') {
+        response.writeHead(200, {'Content-Type': 'application/json'});
+        response.write(jsonSample);
     }
 
 
