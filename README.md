@@ -2,7 +2,13 @@
 
 ## Description
 
-This repository contains workshops (E.g. Node.js learning exercises).
+This repository contains workshops (E.g. **Node.js** learning exercises).
 
-WS -directory contains the task descriptions where as ws0, ws1... and so on
-contain my solutions.
+**WS -directory** contains the task descriptions.
+
+## Node.js workshops
+
+[x] **ws1**
+	- How to create http server
+	- response.writeHead(), .write(), .end() -methods
+	- 

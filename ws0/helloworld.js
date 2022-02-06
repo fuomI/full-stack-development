@@ -1,10 +1,6 @@
-/* console.log("Hello World");
-
-let x = 15+2;
-
-console.log(x); */
-
+// Import http library
 let http  = require("http");
+
 http.createServer(function (request, response) {
 
     // Send the HTTP header. HTTP Status: 200 = OK
