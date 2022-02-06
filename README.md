@@ -34,8 +34,8 @@ This repository contains workshops (E.g. **Node.js** learning exercises).
 	- Updating json file (removing/adding elements, objects)
 	- Presenting json data in a html table
 	
-- [] **ws3**
-- [] **ws4**
-- [] **ws5**
+- [ ] **ws3**
+- [ ] **ws4**
+- [ ] **ws5**
 	
 	
