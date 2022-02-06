@@ -1,12 +1,17 @@
+// Import http and file system
 const http = require('http');
 const fs = require('fs');
 
+// Declare different routes' contents as string type
 let frontpage = fs.readFileSync('frontpage.txt').toString();
 let contact = fs.readFileSync('contact.txt').toString();
 let example = fs.readFileSync('example.txt').toString();
 let jsonSample = fs.readFileSync('sampledata.json').toString();
 
+// Create http server
 http.createServer(function (request,response) {
+
+    // Depending on route, write different content
 
     if (request.url === '/') {
         response.writeHead(200, {'Content-Type': 'Text/plain'});
@@ -36,11 +41,6 @@ http.createServer(function (request,response) {
 
     response.end();
 
-}).listen(8081);
+}).listen(8081); // Listening port 8081
 
 console.log ('Server running at http://127.0.0.1:8081/');
-
-/*
-https://pastebin.com/mmN3YtKK
-https://pastebin.com/fH6UBa4g
-*/

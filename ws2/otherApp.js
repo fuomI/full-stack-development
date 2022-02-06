@@ -1,10 +1,12 @@
-let fs = require('fs');
+// Import file system
+const fs = require('fs');
 
 console.log("Program started");
 
-// Naming callback function, defining later
+// Naming callback function, defining later - non-blocking way
 fs.readFile('example.txt', results);
 
+// Node continues while the file is read
 for (let i = 0; i < 10; i++) {
     console.log("Node just keeps on going...");
 }
