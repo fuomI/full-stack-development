@@ -1,20 +1,15 @@
-// Import node-fetch module
+// Import http, node-fetch  module
+const http = require('http');
 const fetch = require('node-fetch');
 
 // Declare API url in variabl
 const apiURL = "http://www.omdbapi.com/?s=star+wars&apikey=cbbc6750"
 
-// Object to hold json data
-let json = {};
-// GET -request as default
-fetch(apiURL)
-    // Parse response
-  .then(response => response.json())
-   // Display data in console (object)
-  .then(data => saveDataToVariable(data));
+let obj;
 
-function saveDataToVariable(data) {
-    json = data;
-    console.log(json);
-}
+fetch(apiURL)
+  .then(response => response.json())
+  .then(data => obj = data)
+  .then(() => console.log(obj));
+
 
