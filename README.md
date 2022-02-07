@@ -35,6 +35,10 @@ This repository contains workshops (E.g. **Node.js** learning exercises).
 	- Presenting json data in a html table
 	
 - [ ] **ws3**
+	- How to install node-fetch
+	- How to import node-fetch (2.6.7 version can be imported using require)
+	- Request to API using fetch in node.js
+	
 - [ ] **ws4**
 - [ ] **ws5**
 	
