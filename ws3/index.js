@@ -13,6 +13,8 @@ fetch(apiURL)
   .then(data => obj = data)
   .then(() => console.log("fetch done"));
 
+const PORT = process.env.PORT || 5000;
+
 http.createServer(function (request,response) {
 
     response.writeHead(200, {'Content-Type':'text/html'});
@@ -28,8 +30,4 @@ http.createServer(function (request,response) {
     });
 
     response.end("");
-}).listen(8081);
-
-console.log('Server running at http://127.0.0.1:8081/');
-
- //  https://www.omdbapi.com/?s=terminator&apikey=a22e9054
+}).listen(PORT);
