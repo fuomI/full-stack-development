@@ -38,6 +38,9 @@ This repository contains workshops (E.g. **Node.js** learning exercises).
 	- How to install node-fetch
 	- How to import node-fetch (2.6.7 version can be imported using require)
 	- Request to API using fetch in node.js
+	- Parsing JSON from API into HTML table presented on webserver
+	
+Terminator movies mini app published on Heroku: https://terminator-movies.herokuapp.com/
 	
 - [ ] **ws4**
 - [ ] **ws5**
