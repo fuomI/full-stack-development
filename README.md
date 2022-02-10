@@ -45,7 +45,8 @@ Terminator movies mini app published on Heroku: https://terminator-movies.heroku
 - [ ] **ws4**
 	- Installing express using npm
 	- Creating web server using express
-	
+	- Using routes in express to display different kinds of data
+	- res.sendFile() to show static files like .html
 - [ ] **ws5**
 	
 	
