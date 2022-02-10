@@ -43,6 +43,9 @@ This repository contains workshops (E.g. **Node.js** learning exercises).
 Terminator movies mini app published on Heroku: https://terminator-movies.herokuapp.com/
 	
 - [ ] **ws4**
+	- Installing express using npm
+	- Creating web server using express
+	
 - [ ] **ws5**
 	
 	
