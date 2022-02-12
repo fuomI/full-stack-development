@@ -8,12 +8,12 @@ This repository contains workshops (E.g. **Node.js** learning exercises).
 
 ## Node.js workshops
 
-- [x] **ws0**
+- [x] **ws0 - http**
 	- How to create **http** server
 	- **response.writeHead(), .write(), .end()** -methods
 	- How to use routes via **request.url**
 
-- [x] **ws1**
+- [x] **ws1 - nodemon**
 	- How to make **express** app
 	- Debugging node.js app
 	- Introduction of **nodemon -tool**
@@ -37,7 +37,7 @@ This repository contains workshops (E.g. **Node.js** learning exercises).
 - [x] **ws3 - node-fetch**
 	- How to install node-fetch
 	- How to import node-fetch (2.6.7 version can be imported using require)
-	- Request to API using fetch in node.js
+	- Request to API using **fetch** in node.js
 	- Parsing JSON from API into HTML table presented on webserver
 	
 Terminator movies mini app published on Heroku: https://terminator-movies.herokuapp.com/
@@ -47,8 +47,8 @@ Terminator movies mini app published on Heroku: https://terminator-movies.heroku
 	- Creating web server using express
 	- Using routes in express to display different kinds of data
 	- **res.sendFile()** to show static files like .html
-	- How to use body-parser -module 
-	- How to post data from form to a file for example
+	- How to use **body-parser** -module 
+	- How to post data from a form to a file for example
 	
 - [ ] **ws5**
 	
