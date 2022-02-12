@@ -1,3 +1,4 @@
+const fs = require('fs');
 const express = require('express');
 const app = express();
 
@@ -36,7 +37,28 @@ app.get('/details', function (req, res) {
 });
 
 app.get('/add', function (req, res) {
-    res.send('Lets try to add some data to a file!');
+
+    // Load data from file
+    let data = require('./exampledata2.json');
+
+    // Create new JSON object and add it
+    data.push({
+        "Name": "Joni Jansson",
+        "Company": "Jonin Treenivinkit",
+        "Email": "jonij@treenivinkit.fi",
+        "Date": "12/2/2022 \r\n"
+    });
+
+    // Convert the JSON object to a string
+    let jsonStr = JSON.stringify(data);
+
+    // Write data to the file
+    fs.writeFile('exampledata2.json', jsonStr, (err) => {
+        if (err) throw err;
+        console.log('Data is saved');
+    });
+
+    res.send('Saved the data to a file. Browse to the /details to see the contents');
 });
 
 // The route 404 (Always last)
