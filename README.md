@@ -50,6 +50,13 @@ Terminator movies mini app published on Heroku: https://terminator-movies.heroku
 	- How to use **body-parser** -module 
 	- How to post data from a form to a file for example
 	
-- [ ] **ws5**
+- [x] **ws5**
+	- Express includes EJS
+	- Using EJS templates
+	- **app.set('view engine', 'ejs');** needed
+	- EJS pages go to views/pages
+	- EJS partials go to views/partials
+	
+	
 	
 	
