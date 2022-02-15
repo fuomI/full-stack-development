@@ -20,13 +20,20 @@
     </header>
     <main>
         <div class="jumbotron">
-            <h1><%= new_heading %></h1>
-            <p><%= new_paragraph %></p>
+
+            <table>
+                <% users.forEach(function(user) { %>
+                <tr>
+                    <td><%= user.name %></td>
+                    <td><%= user.age %></td>
+                </tr>
+                <% })%>
+            </table>
         </div>
     </main>
 
     <footer>
-        <%= include('../partials/footer') %>
+        Footer
     </footer>
 </body>
 

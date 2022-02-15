@@ -5,6 +5,13 @@ let app = express();
 // View engine to ejs
 app.set('view engine', 'ejs');
 
+let data = {users:[
+    {name: 'John', age: 25},
+    {name: 'Mike', age: 42},
+    {name: 'Samantha', age: 51}
+]};
+
+
 // Index page
 app.get('/', function(req, res) {
     res.render('pages/index', {
@@ -13,6 +20,10 @@ app.get('/', function(req, res) {
     });
 });
 
+// Users
+app.get('/users', function (req, res) {
+    res.render('pages/users', data);
+});
 
 
 app.listen(8081);
